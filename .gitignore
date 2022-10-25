@@ -1,0 +1,10 @@
+crawl/data/reviews.pkl
+crawl/data/games.csv
+crawl/data/review_summary_asyncio.csv
+crawl/friend_game_list.ipynb
+crawl/data/screenshots.hdf5
+crawl/reviews/ReviewsDF_0.pkl
+crawl/reviews/ReviewsDF_1.pkl
+crawl/reviews/ReviewsDF_2.pkl
+crawl/reviews/ReviewsDF_error.pkl
+crawl/data/headers.hdf5
