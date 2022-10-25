@@ -56,6 +56,11 @@ print ('共{}個user, {}筆評論'.format(len(counts[counts>=USER_THRESHOLD]), r
 games.reset_index(drop=True,inplace=True)
 reviews.reset_index(drop=True,inplace=True)
 #%%
+filteredID = {'UserID':counts[counts>=USER_THRESHOLD].index.tolist(), 'AppID':games['AppID'].tolist()}
+import pickle 
+with open('crawl/data/filteredID.pkl', 'wb') as f:
+    pickle.dump(filteredID, f)
+#%%
 # 文字前處理
 def textPreprocess(df, textCol):
     df[textCol] = df[textCol].str.lower()
